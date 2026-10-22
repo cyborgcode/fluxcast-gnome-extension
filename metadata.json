@@ -1,0 +1,10 @@
+{
+  "uuid": "fluxcast@rayen.local",
+  "name": "FluxCast Quick Settings",
+  "description": "Cast the screen to a TV from Quick Settings using FluxCast",
+  "shell-version": [
+    "50"
+  ],
+  "version": 1,
+  "url": "https://github.com/cyborgcode/fluxcast-gnome-extension"
+}
