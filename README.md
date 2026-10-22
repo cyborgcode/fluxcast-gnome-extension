@@ -50,14 +50,12 @@ The extension reads `~/.config/fluxcast-gnome-extension/config.json`:
 ```sh
 git clone https://github.com/cyborgcode/fluxcast-gnome-extension.git
 cd fluxcast-gnome-extension
-mkdir -p ~/.local/share/gnome-shell/extensions/fluxcast@rayen.local/icons
-cp metadata.json extension.js scan-helper.py ~/.local/share/gnome-shell/extensions/fluxcast@rayen.local/
-cp icons/fluxcast-symbolic.svg ~/.local/share/gnome-shell/extensions/fluxcast@rayen.local/icons/
-gnome-extensions enable fluxcast@rayen.local
+./install.sh
 ```
 
-On Wayland you may have to log out and back in before the extension can be
-enabled.
+The installer copies the extension to
+`~/.local/share/gnome-shell/extensions/fluxcast@rayen.local` and enables it.
+Log out and back in to load it. Run it again after `git pull` to update.
 
 ## Optional FluxCast patch: skip the screen-share dialog
 
